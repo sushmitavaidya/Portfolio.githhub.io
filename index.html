@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5aea11ea65.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo1.png" />
+        </div>
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi,this is <span>Sushmita Vaidya</span><br />
+            Welcome to my <br />
+            <span>Personal Portfolio</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!----------------about------------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/sv1.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>Hello!! I'm Sushmita Vaidya.</p>
+            <p>
+              I'm persuing Computer Science Engineering at KLS Gogte Instiute Of
+              Technology.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab active-link" onclick="opentab('languages')">
+                <strong>Languages</strong>
+              </p>
+              <p class="tab" onclick="opentab('education')">
+                <strong>Education</strong>
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="languages">
+              <ul>
+                <li>English</li>
+                <li>Kannada</li>
+                <li>Hindi</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span><b>2019 </b></span> SSLC
+                </li>
+                <li>
+                  <span><b>2021</b> </span> PUC
+                </li>
+                <li>
+                  <span><b>2021-Current</b> </span> Engineering
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------portfolio----------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Portfolio</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, enim cupiditate aliquid exercitationem excepturi, iste
+              vero aspernatur autem quisquam neque libero dolores suscipit odio
+              nulla, quaerat id doloribus voluptates quidem!
+            </p>
+            <a href="https://www.w3schools.com/w3css/defaulT.asp"
+              ><u>Learn more</u></a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>C and C++</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, enim cupiditate aliquid exercitationem excepturi, iste
+              vero aspernatur autem quisquam neque libero dolores suscipit odio
+              nulla, quaerat id doloribus voluptates quidem!
+            </p>
+            <a href="https://www.codecademy.com/learn/learn-c-plus-plus"
+              ><u>Learn more</u></a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, enim cupiditate aliquid exercitationem excepturi, iste
+              vero aspernatur autem quisquam neque libero dolores suscipit odio
+              nulla, quaerat id doloribus voluptates quidem!
+            </p>
+            <a href="https://www.javatpoint.com/"><u>Learn more</u></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------contact------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact me</h1>
+            <p><i class="fa-solid fa-envelope"></i>contact@web.com</p>
+            <p><i class="fa-solid fa-phone"></i>9837468278</p>
+            <div class="socialicons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://linkedin.com/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your name"
+                class="box"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                class="box"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @sushmita.vaidya</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
