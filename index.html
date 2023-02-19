@@ -21,7 +21,7 @@
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
@@ -46,7 +46,10 @@
           <div class="about-col-2">
             <h1 class="subtitle">About me</h1>
             <p>Hello!! I'm Sushmita Vaidya.</p>
+            <p><br />Date Of Birth: 30-11-2003</p>
+            <p><br />City: Belagavi,Karnataka</p>
             <p>
+              <br />
               I'm persuing Computer Science Engineering at KLS Gogte Instiute Of
               Technology.
             </p>
@@ -85,7 +88,7 @@
     </div>
 
     <!-----------------portfolio----------------->
-    <div id="services">
+    <div id="portfolio">
       <div class="container">
         <h1 class="subtitle">My Portfolio</h1>
         <div class="service-list">
@@ -94,9 +97,9 @@
             <h2>Web Development</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Assumenda, enim cupiditate aliquid exercitationem excepturi, iste
-              vero aspernatur autem quisquam neque libero dolores suscipit odio
-              nulla, quaerat id doloribus voluptates quidem!
+              Assumenda, enim cupiditate aliquid exercitationem excepturi,
+              istvero aspernatur autem quisquam neque libero dolores suscipit
+              odionulla, quaerat id doloribus voluptates quidem!
             </p>
             <a href="https://www.w3schools.com/w3css/defaulT.asp"
               ><u>Learn more</u></a
@@ -107,9 +110,9 @@
             <h2>C and C++</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Assumenda, enim cupiditate aliquid exercitationem excepturi, iste
-              vero aspernatur autem quisquam neque libero dolores suscipit odio
-              nulla, quaerat id doloribus voluptates quidem!
+              Assumenda, enim cupiditate aliquid exercitationem excepturi,
+              istvero aspernatur autem quisquam neque libero dolores suscipit
+              odionulla, quaerat id doloribus voluptates quidem!
             </p>
             <a href="https://www.codecademy.com/learn/learn-c-plus-plus"
               ><u>Learn more</u></a
@@ -120,9 +123,9 @@
             <h2>Java</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Assumenda, enim cupiditate aliquid exercitationem excepturi, iste
-              vero aspernatur autem quisquam neque libero dolores suscipit odio
-              nulla, quaerat id doloribus voluptates quidem!
+              Assumenda, enim cupiditate aliquid exercitationem excepturi,
+              istvero aspernatur autem quisquam neque libero dolores suscipit
+              odionulla, quaerat id doloribus voluptates quidem!
             </p>
             <a href="https://www.javatpoint.com/"><u>Learn more</u></a>
           </div>
@@ -136,7 +139,9 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="subtitle">Contact me</h1>
-            <p><i class="fa-solid fa-envelope"></i>contact@web.com</p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>sushmitavaidya30@gmail.com
+            </p>
             <p><i class="fa-solid fa-phone"></i>9837468278</p>
             <div class="socialicons">
               <a href="https://facebook.com/"
@@ -164,6 +169,14 @@
                 required
               />
               <input
+                type="tel"
+                name="Phone number"
+                placeholder="Your contact number"
+                pattern="[0-9]{10}"
+                class="box"
+                required
+              />
+              <input
                 type="email"
                 name="Email"
                 placeholder="Your email"
@@ -174,6 +187,7 @@
                 name="Message"
                 rows="6"
                 placeholder="Your message"
+                required
               ></textarea>
 
               <button type="submit" class="btn btn2">Submit</button>
@@ -182,7 +196,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright @sushmita.vaidya</p>
+        <p>Copyright @sushmita.vaidya All rights reserved</p>
       </div>
     </div>
     <script>
