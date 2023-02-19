@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #faf6f6;
+  background: #fff;
   color: #1c1c1d;
 }
 #header {
@@ -32,6 +32,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  scroll-margin-block: 0;
 }
 .logo img {
   float: left;
@@ -41,19 +42,21 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
+
   margin: 10px 20px;
 }
 nav ul li a {
-  color: #fff;
+  color: #fffefe;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 400;
   position: relative;
   display: flex;
 }
 nav ul li a::after {
   content: "";
   width: 0;
-  height: 3px;
+  height: 6px;
   background: hsl(325, 78%, 48%);
   position: absolute;
   left: 0;
@@ -81,6 +84,7 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #0a0909;
+  font-size: 18px;
 }
 .row {
   display: flex;
@@ -95,16 +99,21 @@ nav ul li a:hover::after {
   border-radius: 15px;
 }
 .about-col-2 {
+  margin-top: 20px;
   flex-basis: 60%;
+  font-size: 20px;
+  font-weight: 300;
 }
 .subtitle {
+  margin-bottom: 10px;
   font-size: 60px;
   font-weight: 600;
   color: #95113bf9;
 }
+
 .tab-titles {
   display: flex;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 200;
   margin: 20px 0 40px;
 }
@@ -148,8 +157,8 @@ nav ul li a:hover::after {
   display: block;
 }
 
-/*--------Services----------*/
-#services {
+/*--------portfolio----------*/
+#portfolio {
   padding: 30px 0;
 }
 .service-list {
@@ -171,7 +180,7 @@ nav ul li a:hover::after {
   margin-bottom: 30px;
 }
 .service-list div h2 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -183,8 +192,8 @@ nav ul li a:hover::after {
   display: inline-block;
 }
 .service-list div:hover {
-  background: #8343b1f5;
-  transform: translateY(-10px);
+  background: #2dbda8f5;
+  transform: translateY(10px);
 }
 
 /*------contact---------*/
@@ -223,7 +232,7 @@ nav ul li a:hover::after {
 .btn.btn2 {
   border: 0;
   outline: none;
-  background: #c93b5f;
+  background: #e82b5b;
   padding: 15px;
   margin: 15px 0;
   color: #e8cece;
@@ -233,14 +242,26 @@ nav ul li a:hover::after {
 }
 .contact-right form {
   width: 100%;
+  max-width: 450px;
+  background-color: #f8f5c4;
+  border: #4d1a1a61;
+  border-radius: 6px;
+  outline: auto;
+  padding-inline: 50px;
+  position: relative;
+  nav-right: auto;
+  left: 20px;
+  text-align: center;
+  margin-top: 10%;
 }
+
 form input,
 form textarea {
   margin-bottom: 30px;
   width: 100%;
-  border: 0;
-  outline: none;
-  background: #292f2d;
+  border: 50px;
+
+  background: #342e2e;
   padding: 15px;
   margin: 15px 0;
   color: #fff;
@@ -259,7 +280,7 @@ form .btn2 {
   padding: 25px;
   background: #cec8c8;
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 2%;
 }
 nav ul .fa-solid {
   display: none;
@@ -267,7 +288,7 @@ nav ul .fa-solid {
 nav .fa-sharp {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .header-text {
     margin-top: 100%;
     font-size: 16px;
@@ -284,7 +305,7 @@ nav .fa-sharp {
     width: 150px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 1;
+    z-index: 2;
     transition: right 0.5s;
   }
   nav ul li {
@@ -295,8 +316,9 @@ nav .fa-sharp {
     display: inline-block;
     position: absolute;
     font-size: 25px;
+    color: #fff;
     top: 0px;
-    nav-right: 25px;
+    left: 300px;
     cursor: pointer;
   }
   nav ul .fa-solid {
@@ -305,5 +327,24 @@ nav .fa-sharp {
     top: 270px;
     left: 50px;
     cursor: pointer;
+  }
+  .about-col-1 img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+  }
+  .contact-right form {
+    flex-direction: column;
+    width: 150%;
+    nav-down: auto;
+    left: -30px;
+  }
+  .copyright {
+    width: auto;
+    text-align: center;
+    padding: 25px;
+    background: #cec8c8;
+    font-weight: 300;
+    margin-top: 70px;
   }
 }
